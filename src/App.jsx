@@ -15,9 +15,12 @@ function App() {
         initial={{ rotate: "0deg" }}
         animate={{
           rotate: "180deg",
+          y:[0,150,-150,300,-300,0]
         }}
-        exit={{rotate:"0deg"}}
-        transition={{ duration: 1, ease: "backInOut" }}
+        exit={{ rotate: "0deg" }}
+        transition={{ duration: 1, ease: "backInOut",
+          times:[0,0,0,0,0.85,1]
+         }}
         style={{
           width: 150,
           height: 150,
